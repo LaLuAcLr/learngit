@@ -1,0 +1,24 @@
+git init 将目录变成仓库
+git add
+git commit -m ""
+git status
+git diff <file>
+git log --graph --pretty=oneline --abbrev-commit
+git reflog
+git reset --hard commit_id(HEAD)
+git checkout -- <file> 将缓存区回滚工作区
+git reset <file> 将仓库回滚缓存区
+git rm <file>
+ssh key to authorize ur pc
+git remote add origin <git address> 链接远程仓库
+git push -u origin master 第一次push
+git clone <git address>
+git branch (-d <branch>)
+git branch <branch> 创建
+git checkout <branch> = git switch <branch>
+git checkout -b <branch> = git switch -c <branch> 创建并切换
+git merge <branch>
+manually merge if conflicts
+git merge --no-ff -m "" <branch> :: branch history kept
+git stash (list/pop/apply <stash>/drop)
+git cherry-pick <commit> 套用特定commit
