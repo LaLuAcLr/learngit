@@ -1,11 +1,12 @@
-git init 将目录变成仓库
+﻿git init 将目录变成仓库
 git add
-git commit -m ""
+git commit -m "" 
 git status
-git diff <file>
-git log --graph --pretty=oneline --abbrev-commit
-git reflog
-git reset --hard commit_id(HEAD)
+
+git diff <file> 查看不同
+git log --graph --pretty=oneline --abbrev-commit 查看日志
+git reflog 查看历史命令
+git reset --hard commit_id(HEAD) 回滚commit的修改
 git checkout -- <file> 将缓存区回滚工作区
 git reset <file> 将仓库回滚缓存区
 git rm <file>
@@ -13,18 +14,19 @@ ssh key to authorize ur pc
 git remote add origin <git address> 链接远程仓库
 git push -u origin master 第一次push
 git clone <git address>
-git branch (-d <branch>)(-D <branch> for unmerged branch)
+git branch (-d <branch>) 删除分支(-D <branch> 强行删除)
 git branch <branch> 创建
-git checkout <branch> = git switch <branch>
+git branch 查看分支
+git checkout <branch> = git switch <branch> 切换分支
 git checkout -b <branch> = git switch -c <branch> 创建并切换
-git merge <branch>
+git merge <branch> 合并分支
 manually merge if conflicts
-git merge --no-ff -m "" <branch> :: branch history kept
-git stash (list/pop/apply <stash>/drop)
+git merge --no-ff -m "" <branch> 保留合并历史 禁用fast forward
+git stash (list列表/pop删除/apply恢复 <stash>/drop) 保留当前修改版本
 git cherry-pick <commit> 套用特定commit
 git remote (-v) 查看远程仓库
 git branch --set-upstream-to=origin/dev dev 建立branch链接
-git pull 抓branch
+git pull 抓取别人提交的分支
 git rebase 使log变直，但修改了commits（用于对本地变基清理历史）
 git tag (<version>) (<commit>)
 git show <tag>
